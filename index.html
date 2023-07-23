@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio Milagros Callejo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- MENU ENCABEZADO -->
+  <div class="contenedor-header">
+    <header>
+      <div class="logo">
+        <a href="#">Milagros Callejo</a>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+          <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+          <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+          <!--<li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>-->
+          <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+
+  <!-- SECCION INICIO -->
+  <section id="inicio" class="inicio">
+    <div class="contenido-banner">
+      <div class="contenedor-img">
+        <img src="img/foto.png" alt="">
+      </div>
+      <h1>Milagros Callejo</h1>
+      <h2>Developer Full Stack</h2>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/milagroscallejo/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/mili.callejo/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send/?phone=5493516831887&text&type=phone_number&app_absent=0"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://github.com/MiliCallejo?tab=repositori"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION SOBRE MI -->
+  <section id="sobremi" class="sobremi">
+    <div class="contenido-seccion">
+      <h2>Sobre Mí</h2>
+      <p><span>Hola, soy Milagros Callejo.</span> Developer Full Stack, con conocimientos en lenguajes de programación
+        tales como Javascript,
+        PHP y Java.
+        Dichos conocimientos adquiridos en cursos de Udemy y en el Instituto Superior Politécnico Córdoba.
+        Además, cuento con experiencia laboral mayor a 1 año como Desarrolladora Web.</p>
+
+      <div class="fila">
+        <!-- datos personales -->
+        <div class="col">
+          <h3>Datos Personales</h3>
+          <ul>
+            <li>
+              <strong>Cumpleaños</strong>
+              03-11-2002
+            </li>
+            <li>
+              <strong>Teléfono</strong>
+              +54 9 351 683-1887
+            </li>
+            <li>
+              <strong>Email</strong>
+              milagros.callejo03@gmail.com
+            </li>
+            <li>
+              <strong>Ubicación</strong>
+              Córdoba, Argentina
+            </li>
+            <li>
+              <strong>Cargo</strong>
+              <span>Developer Full Stack</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- intereses -->
+        <div class="col">
+          <h3>Intereses</h3>
+          <div class="contenedor-intereses">
+            <div class="interes">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>JUEGOS</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-headphones"></i>
+              <span>MUSICA</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-plane"></i>
+              <span>VIAJAR</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-book"></i>
+              <span>LIBROS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button>
+        <a href="cv/cv-milagros-callejo.pdf" download="CV Milagros Callejo">
+          Descargar CV <i class="fa-solid fa-download"></i>
+          <span class="overlay"></span>
+        </a>
+      </button>
+    </div>
+  </section>
+
+  <!-- SECCION SKILLS -->
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+        <!-- Technical Skill -->
+        <div class="col">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <span>Java</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>PHP</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>MongoDB & MySQL</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>81%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Node & Express & React</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Professional Skills -->
+        <div class="col">
+          <h3>Professional Skills</h3>
+          <div class="skill">
+            <span>Comunicación</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Trabajo en Equipo</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>76%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Creatividad</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Dedicación</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>82%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Compromiso</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION CURRICULUM -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="fila">
+        <div class="col izquierda">
+          <h3>Educación</h3>
+          <div class="item izq">
+            <h4>Tecnicatura Superior en Desarrollo Web y Aplicaciones Digitales
+            </h4>
+            <span class="casa">Instituto Superior Politécnico Córdoba</span>
+            <span class="fecha">2022 - 2023</span>
+            <p>Programación, Bases de Datos, Inglés.</p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+          <div class="item izq">
+            <h4>Bachiller en Informática</h4>
+            <span class="casa">IPEM 10 ROMA</span>
+            <span class="fecha">2015 - 2020</span>
+            <p>Algoritmos, Logica de Programación, Bases de Datos.</p>
+            <p>Córdoba Capital, Argentina.</p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col derecha">
+          <h3>Experiencia Laboral</h3>
+          <div class="item der">
+            <h4>Back-End Developer</h4>
+            <span class="casa">Flexxus</span>
+            <span class="fecha">2022 - 2023</span>
+            <p>Software de Gestión ERP.</p>
+            <p>Delphi, SQL.</p>
+
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <div class="item der">
+            <h4>Full-Stack Developer</h4>
+            <span class="casa">ArWebs</span>
+            <span class="fecha">2022 - 2022</span>
+            <p>Software de Administración de Seguros.</p>
+            <p>PHP, Symfony, JavaScript, Twig.</p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION PORTFOLIO -->
+  <!--
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2>PORTFOLIO</h2>
+      <div class="galeria">
+        <div class="proyecto">
+          <img src="img/p1.jpg" alt="">
+          <div class="overlay">
+            <h3>Diseño Creativo</h3>
+            <p>Fotografía</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- SECCION CONTACTO -->
+  <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+      <h2>CONTACTO</h2>
+      <div class="fila">
+        <!-- Formulario -->
+        <div class="col">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Teléfono">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Asunto">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <button>
+            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+            <span class="overlay"></span>
+          </button>
+        </div>
+        <!-- Mapa -->
+        <div class="col">
+          <img src="img/ubicacion.jpg" alt="">
+          <div class="info">
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                Córdoba, Argentina.
+              </li>
+              <li>
+                <i class="fa-solid fa-mobile-screen"></i>
+                Tel: +54 9 351 683 1887
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                Email: milagros.callejo03@gmail.com
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <a href="#inicio" class="arriba">
+      <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+      <a href="https://www.linkedin.com/in/milagroscallejo/"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/mili.callejo/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://api.whatsapp.com/send/?phone=5493516831887&text&type=phone_number&app_absent=0"><i
+          class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://github.com/MiliCallejo?tab=repositori"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <p class="copy">Copyright © 2023. Todos los derechos reservados - Milagros Callejo - Córdoba - Argentina.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
